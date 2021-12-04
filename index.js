@@ -12,6 +12,13 @@ app.post('/camilo', (req, res) => {
     })
 })
 
+app.post('/mezu', (req, res) => {
+    res.json({
+        "cedula": "987654321",
+        "apellido": "mezu"
+    })
+})
+
 app.listen(3000,()=>{
     console.log("Conectado Puerto 3000")
 })
