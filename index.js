@@ -27,6 +27,12 @@ app.post('/pares', (req, res) => {
     let result = operaciones.pares(numero)
     res.send(result)
    })
+   
+app.post('/fibbo', (req, res) => {
+    let numero = req.body.numero
+    let result = operaciones.pares(numero)
+    res.send(result)
+   })
 
 
 
@@ -35,4 +41,6 @@ app.use(express.static("public"));
 app.listen(3000,()=>{
     console.log("Conectado Puerto 3000")
 })
+
+
 
