@@ -28,6 +28,11 @@ app.post('/pares', (req, res) => {
     res.send(result)
    })
 
+app.post('/fibonacci', (req, res) => {
+    let numero = req.body.numero
+    let result = operaciones.fibonacci(numero)
+    res.send(result)
+   })
 
 
 app.use(express.static("public"));
