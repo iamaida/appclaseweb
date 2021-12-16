@@ -1,6 +1,8 @@
 let endpoints = {
     0 : "/pares",
-    1 : "/impares" 
+    1 : "/impares",
+    2 : "/Seriefactorial",
+    3 : "/factorial"
   }
 
   function probandopeti(enpoint,numero) {

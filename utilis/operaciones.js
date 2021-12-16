@@ -17,6 +17,40 @@ function pares(x) {
     return resp;
  }
 
+ function factor(x) { //Saca el numero en factorial
+	if (x == 0){ 
+		return 1; 
+	}
+	return x * factor (x-1); 
+}
+
+function factorial(x){//Da el resultado factorial de un numero
+    let resp = "El resultado factorial es : "
+    let fact = ""
+    fact = factor(x)
+    return resp + fact;
+}
+
+function Seriefactorial(x){ //Hace la serie factorial s = 1! - 2! + 3! -4! ... n!
+    let resp = "El resultado de la serie factorial es : "
+    let fact = ""
+    let op = ""
+   let i = 1;
+   do {
+    fact = factor(i)
+   if ( i % 2 == 0){
+    op = op - fact
+   }
+   else {
+    op = op + fact
+   }
+   i = i + 1;
+   } while (i <= x);
+    return resp + op;
+}
+
  module.exports={
-     pares
+     pares,
+     Seriefactorial,
+     factorial
  }
