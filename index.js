@@ -28,6 +28,17 @@ app.post('/pares', (req, res) => {
     res.send(result)
    })
 
+app.post('/seriefactorial', (req, res) => {
+    let numero = req.body.numero
+    let result = operaciones.seriefactorial(numero)
+    res.send(result)
+})
+
+app.post('/factorial', (req, res) => {
+    let numero = req.body.numero
+    let result = operaciones.factorial(numero)
+    res.send(result)
+})
 
 
 app.use(express.static("public"));
