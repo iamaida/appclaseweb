@@ -31,7 +31,7 @@ function factorial(x){//Da el resultado factorial de un numero
     return resp + fact;
 }
 
-function Seriefactorial(x){ //Hace la serie factorial s = 1! - 2! + 3! -4! ... n!
+function seriefactorial(x){ //Hace la serie factorial s = 1! - 2! + 3! -4! ... n!
     let resp = "El resultado de la serie factorial es : "
     let fact = ""
     let op = ""
@@ -51,6 +51,6 @@ function Seriefactorial(x){ //Hace la serie factorial s = 1! - 2! + 3! -4! ... n
 
  module.exports={
      pares,
-     Seriefactorial,
+     seriefactorial,
      factorial
  }

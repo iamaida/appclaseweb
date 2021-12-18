@@ -28,9 +28,9 @@ app.post('/pares', (req, res) => {
     res.send(result)
    })
 
-app.post('/Seriefactorial', (req, res) => {
+app.post('/seriefactorial', (req, res) => {
     let numero = req.body.numero
-    let result = operaciones.Seriefactorial(numero)
+    let result = operaciones.seriefactorial(numero)
     res.send(result)
 })
 
