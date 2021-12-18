@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const operaciones = require("./utilis/operaciones")
+let PORT = process.env.PORT || 3000
 
 app.use(express.json());
 
@@ -43,7 +44,7 @@ app.post('/factorial', (req, res) => {
 
 app.use(express.static("public"));
 
-app.listen(3000,()=>{
+app.listen(PORT,()=>{
     console.log("Conectado Puerto 3000")
 })
 
