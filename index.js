@@ -41,6 +41,12 @@ app.post('/factorial', (req, res) => {
     res.send(result)
 })
 
+app.post('/palabraingles', (req, res) => {
+    let numero = req.body.numero
+    let result = operaciones.palabraingles(numero)
+    res.send(result)
+})
+
 
 app.use(express.static("public"));
 
