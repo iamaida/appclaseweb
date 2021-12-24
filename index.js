@@ -44,9 +44,7 @@ app.post("/factorial", (req, res) => {
 app.post("/primos", (req, res) => {
   let numero = req.body.numero;
   let result = operaciones.primos(numero);
-  res.json({
-    primos: result,
-  });
+  res.send(result);
 });
 
 app.use(express.static("public"));
