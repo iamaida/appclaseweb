@@ -26,10 +26,17 @@ function factor(x) {
 }
 
 function primos(x) {
-  let primos = [];
-  for (let i = 2; i < x; i++) {
-    if (num % 1 === 0) return false;
-    primos.push(num);
+  let store = [],
+    i,
+    j,
+    primos = [];
+  for (i = 2; i <= x; ++i) {
+    if (!store[i]) {
+      primos.push(i);
+      for (j = i << 1; j <= x; j += i) {
+        store[j] = true;
+      }
+    }
   }
   return primos;
 }
