@@ -2,6 +2,7 @@ let endpoints = {
     0 : "/pares",
     1 : "/fibonacci",
     3 : "/seriefactorial",
+    4 : "/sumatoriacuadrados",
     14 : "/factorial"
   }
 

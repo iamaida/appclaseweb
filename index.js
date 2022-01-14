@@ -40,6 +40,11 @@ app.post('/factorial', (req, res) => {
     res.send(result)
 })
 
+app.post('/sumatoriacuadrados', (req, res) => {
+    let numero = req.body.numero
+    let result = operaciones.sumatoriacuadrados(numero)
+    res.send(result)
+})
 
 app.use(express.static("public"));
 
