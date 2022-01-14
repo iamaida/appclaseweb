@@ -49,8 +49,30 @@ function seriefactorial(x){ //Hace la serie factorial s = 1! - 2! + 3! -4! ... n
     return resp + op;
 }
 
+//Suma el cuadrado de los numeros enteros desde 1 hasta x
+function sumatoriacuadrados(x){ 
+    let resp = ""
+    let suma= 0;
+    for (let i=1; i<= x; i++ ){
+        let cuadrado = (i*i)
+
+        if( i == x)
+        {
+            resp += cuadrado +" ";
+        }else
+        {
+            resp += cuadrado +" "+ "+ ";
+        }
+        
+        suma += cuadrado;
+    }
+    // 1 + 4 + 9 +...+ (x^2) = resultado suma
+    resp += "=" + suma;
+    return resp;
+}
  module.exports={
      pares,
      seriefactorial,
-     factorial
+     factorial,
+     sumatoriacuadrados
  }
