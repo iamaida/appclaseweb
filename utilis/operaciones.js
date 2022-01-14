@@ -64,13 +64,15 @@ function divisionPrimo (x){
     let resp = ""
     let numInc = 0;
     let operacion = 0;
-    numInc = x; // Se guarda el número inicial
-    resp = "La division por el primo menor es: " 
-    // Itera hasta encontrar un primo menor o igual
+    numInc = x; // Se guarda el número inicial 
+    if (x > 2)
     while(esPrimo(x) == false){
         x--
     }
+    // Itera hasta encontrar un primo menor o igual
+    else return "Entrada invalida \nIngrese un número mayor que (2)";
     // Divide y simplifica a tres decimales
+    resp = "La division de "+ numInc + " por el primo menor " + x + " es: "
     operacion = numInc/x
     return resp + operacion.toFixed(3)
 }
