@@ -49,8 +49,35 @@ function seriefactorial(x){ //Hace la serie factorial s = 1! - 2! + 3! -4! ... n
     return resp + op;
 }
 
+function esPrimo (numero){
+    // Unico par es dos
+    if (numero<2||(numero%2==0&&numero!=2))
+        return false;
+    // Busca entre los impares
+    for (let x=3; x*x<=numero; x+=2)
+    if (numero%x==0)
+        return false;
+    return true;
+}
+
+function divisionPrimo (x){
+    let resp = ""
+    let numInc = 0;
+    let operacion = 0;
+    numInc = x; // Se guarda el número inicial
+    resp = "La division por el primo menor es: " 
+    // Itera hasta encontrar un primo menor o igual
+    while(esPrimo(x) == false){
+        x--
+    }
+    // Divide y simplifica a tres decimales
+    operacion = numInc/x
+    return resp + operacion.toFixed(3)
+}
+
  module.exports={
      pares,
      seriefactorial,
-     factorial
+     factorial, 
+     divisionPrimo
  }
