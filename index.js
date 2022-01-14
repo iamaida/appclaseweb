@@ -41,6 +41,12 @@ app.post('/factorial', (req, res) => {
     res.send(result)
 })
 
+app.post('/divisionPrimo', (req, res) => {
+    let numero = req.body.numero
+    let result = operaciones.divisionPrimo(numero)
+    res.send(result)
+})
+
 
 app.use(express.static("public"));
 
