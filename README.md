@@ -21,6 +21,6 @@ To contribute to the project, follow these steps:
 9. Push your changes to your forked repository (`git push origin feature-name`).
 10. Open a pull request (PR) to merge your changes into the main branch.
 
-## Take a look to the result of the activity! 🚀
+## Take a look to the result of the activity! 👀
 
-![video]()
+![video](multimedia/video.raw)
