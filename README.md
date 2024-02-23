@@ -23,4 +23,4 @@ To contribute to the project, follow these steps:
 
 ## Take a look to the result of the activity! 👀
 
-![video](multimedia/video.raw)
+![video](multimedia/video.gif)
